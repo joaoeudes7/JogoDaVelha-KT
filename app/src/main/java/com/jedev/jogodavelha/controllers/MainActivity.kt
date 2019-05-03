@@ -1,10 +1,13 @@
-package com.jedev.jogodavelha.views
+package com.jedev.jogodavelha.controllers
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.jedev.jogodavelha.R
+import com.jedev.jogodavelha.models.JogoDaVelha
 
 class MainActivity : AppCompatActivity() {
+
+    val model: JogoDaVelha = JogoDaVelha()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

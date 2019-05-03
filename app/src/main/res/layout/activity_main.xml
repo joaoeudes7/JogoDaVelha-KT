@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.MainActivity">
+    tools:context=".controllers.MainActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewMain"
@@ -23,7 +23,7 @@
             android:background="#413E3E">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView00"
+                android:id="@+id/cardView_1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="15dp"
@@ -51,14 +51,14 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView01"
+                android:id="@+id/cardView_2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="10dp"
-                app:layout_constraintEnd_toStartOf="@+id/cardView02"
-                app:layout_constraintStart_toEndOf="@+id/cardView00"
+                app:layout_constraintEnd_toStartOf="@+id/cardView_3"
+                app:layout_constraintStart_toEndOf="@+id/cardView_1"
                 app:layout_constraintTop_toTopOf="parent" >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -81,7 +81,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView02"
+                android:id="@+id/cardView_3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="15dp"
@@ -109,15 +109,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView10"
+                android:id="@+id/cardView_4"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                app:layout_constraintBottom_toTopOf="@+id/cardView20"
+                app:layout_constraintBottom_toTopOf="@+id/cardView_7"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView00" >
+                app:layout_constraintTop_toBottomOf="@+id/cardView_1">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -139,15 +139,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView12"
+                android:id="@+id/cardView_6"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="10dp"
-                app:layout_constraintBottom_toTopOf="@+id/cardView22"
+                app:layout_constraintBottom_toTopOf="@+id/cardView_9"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView02" >
+                app:layout_constraintTop_toBottomOf="@+id/cardView_3">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -169,17 +169,17 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView11"
+                android:id="@+id/cardView_5"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                app:layout_constraintBottom_toTopOf="@+id/cardView21"
-                app:layout_constraintEnd_toStartOf="@+id/cardView12"
-                app:layout_constraintStart_toEndOf="@+id/cardView10"
-                app:layout_constraintTop_toBottomOf="@+id/cardView01" >
+                app:layout_constraintBottom_toTopOf="@+id/cardView_8"
+                app:layout_constraintEnd_toStartOf="@+id/cardView_6"
+                app:layout_constraintStart_toEndOf="@+id/cardView_4"
+                app:layout_constraintTop_toBottomOf="@+id/cardView_2">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -201,7 +201,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView20"
+                android:id="@+id/cardView_7"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="15dp"
@@ -230,15 +230,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView21"
+                android:id="@+id/cardView_8"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="15dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/cardView22"
-                app:layout_constraintStart_toEndOf="@+id/cardView20" >
+                app:layout_constraintEnd_toStartOf="@+id/cardView_9"
+                app:layout_constraintStart_toEndOf="@+id/cardView_7">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -261,7 +261,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView22"
+                android:id="@+id/cardView_9"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginEnd="15dp"
