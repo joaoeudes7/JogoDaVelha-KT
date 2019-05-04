@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controllers.MainActivity">
+    tools:context=".view.MainActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewMain"
-        android:layout_width="wrap_content"
+        android:layout_width="349dp"
         android:layout_height="350dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
@@ -29,16 +29,16 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/image00"
+                        android:id="@+id/image_1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
@@ -59,14 +59,14 @@
                 android:layout_marginEnd="10dp"
                 app:layout_constraintEnd_toStartOf="@+id/cardView_3"
                 app:layout_constraintStart_toEndOf="@+id/cardView_1"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/image01"
+                        android:id="@+id/image_2"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
@@ -87,14 +87,14 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/image02"
+                        android:id="@+id/image_3"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
@@ -124,37 +124,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/image10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="0dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView_6"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="10dp"
-                app:layout_constraintBottom_toTopOf="@+id/cardView_9"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView_3">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/image12"
+                        android:id="@+id/image_4"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
@@ -186,7 +156,37 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/image11"
+                        android:id="@+id/image_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView_9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView_3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_6"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
@@ -207,14 +207,14 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginBottom="15dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" >
+                app:layout_constraintStart_toStartOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/image20"
+                        android:id="@+id/image_7"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
@@ -245,7 +245,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/image21"
+                        android:id="@+id/image_8"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
@@ -267,14 +267,14 @@
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="15dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" >
+                app:layout_constraintEnd_toEndOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/image22"
+                        android:id="@+id/image_9"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
@@ -304,4 +304,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
