@@ -6,15 +6,17 @@ import com.jedev.jogodavelha.enums.PLAYER
 import kotlin.properties.Delegates.observable
 
 class JogoDaVelha : JogoDaVelhaListener {
-    var winner by observable<PLAYER?>(null, { property, oldValue, newValue ->
-        if (newValue != null) {
-            setOnWinnerPlayerListener?.invoke(newValue)
+    var winner: PLAYER? = null
+    var state: GAMESTATE? = null
+    var currentPlayer = PLAYER.X
+
+    var result: GAMERESULT? by observable<GAMERESULT?>(null, { property, oldValue, newValue ->
+        when (newValue) {
+            GAMERESULT.DRAW -> setOnDrawListener?.invoke()
+            GAMERESULT.USER_WINNER -> setOnWinnerPlayerListener?.invoke(this.winner!!)
         }
     })
-    var state: GAMESTATE? = null
-    var result: GAMERESULT? = null
 
-    var currentPlayer = PLAYER.X
     var currentPosition by observable<Int?>(null, { property, oldValue, newValue ->
         setOnPlayListener?.invoke(newValue!!)
     })
@@ -52,9 +54,9 @@ class JogoDaVelha : JogoDaVelhaListener {
         players[currentPlayer]!!.add(position)
 
         if (isWinner(players[currentPlayer]!!)) {
-            result = GAMERESULT.USER_WINNER
-            state = GAMESTATE.FINISHED
             winner = currentPlayer
+            state = GAMESTATE.FINISHED
+            result = GAMERESULT.USER_WINNER
         } else if (totalPlayeds == 9) {
             result = GAMERESULT.DRAW
             state = GAMESTATE.FINISHED
